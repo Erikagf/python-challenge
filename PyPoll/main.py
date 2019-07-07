@@ -38,3 +38,12 @@ for name in names:
 print("------------------")
 print(f"Winner: {winner_name}")
 print("------------------")
+
+f = open("resultsPoll.txt", "w")
+f.write("Election Results\r\n")
+f.write("------------------\r\n")
+f.write(f"Total Votes: {total}\r\n")
+f.write("------------------\r\n")
+f.write(f"Winner: {winner_name}\r\n")
+f.write("------------------\r\n")
+f.close()
